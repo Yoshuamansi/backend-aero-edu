@@ -3,11 +3,11 @@
 header("Content-Type: application/json; charset=UTF-8");
 
 // Mendukung koneksi ke Railway (online) dan fallback ke localhost (offline)
-$host = getenv('MYSQLHOST') ?: "localhost";
+$host = getenv('MYSQLHOST') ?: "iriguchi.proxy.rlwy.net";
 $user = getenv('MYSQLUSER') ?: "root";
-$pass = getenv('MYSQLPASSWORD') ?: "";
-$db   = getenv('MYSQLDATABASE') ?: "db_aero";
-$port = getenv('MYSQLPORT') ?: 3306;
+$pass = getenv('MYSQLPASSWORD') ?: "PhTWFKtxZEZeOMOzgXemMLqRgPPsUfFA";
+$db   = getenv('MYSQLDATABASE') ?: "Aviasi";
+$port = getenv('MYSQLPORT') ?: 24285;
 
 $conn = new mysqli($host, $user, $pass, $db, $port);
 
